@@ -1,8 +1,4 @@
 from ctypes import windll, c_long, c_ulong, Structure, Union, c_int, POINTER, sizeof, CDLL
-from os import path
-
-basedir = path.dirname(path.abspath(__file__))
-
 
 LONG = c_long
 DWORD = c_ulong
@@ -28,7 +24,7 @@ class INPUT(Structure):
 
 
 def SendInput(*inputs):
-    print(inputs)
+    #print(inputs)
     nInputs = len(inputs)
     LPINPUT = INPUT * nInputs
     pInputs = LPINPUT(*inputs)
