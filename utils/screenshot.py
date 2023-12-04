@@ -6,8 +6,11 @@ import win32con
 import win32print
 import win32api
 
+'''
+use win32api to grab the screen (mss is slower)
+'''
 
-def grab_screen_win32(region):
+def grab_screen(region):
     hwin = win32gui.GetDesktopWindow()
     left, top, x2, y2 = region
     width = x2 - left + 1

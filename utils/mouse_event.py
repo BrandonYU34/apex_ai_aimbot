@@ -1,5 +1,4 @@
 from ctypes import windll, c_long, c_ulong, Structure, Union, c_int, POINTER, sizeof, CDLL
-
 LONG = c_long
 DWORD = c_ulong
 ULONG_PTR = POINTER(DWORD)
