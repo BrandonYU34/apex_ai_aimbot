@@ -3,7 +3,7 @@ from ultralytics import YOLO
 import multiprocessing
 
 if __name__ == '__main__':
-    model = YOLO('apex_yolo_v8n/exp015/weights/best.pt')
+    model = YOLO('apex_yolo_v8n/exp640_/weights/best.pt')
 
     result = model.predict(
         source='test/images',
